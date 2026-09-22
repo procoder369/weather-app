@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Weather App</h1>
+
+    <div class="search-box">
+      <input id="place" type="text" placeholder="Enter city name" autocomplete="off">
+      <button id="getWeatherBtn" type="button">Search</button>
+    </div>
+
+    <p id="status" aria-live="polite">Enter a city to see the weather.</p>
+
+    <section class="weather-info" aria-live="polite" hidden>
+      <img id="weatherIcon" src="New folder/weather-news.png" alt="Weather condition">
+      <div>
+        <p id="location"></p>
+        <p id="temperature">0<sub>&deg;C</sub></p>
+        <p id="description">Cloudy</p>
+        <p id="humidity">Humidity: 0%</p>
+        <p id="wind">Wind: 0 km/h</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="weather.js"></script>
+</body>
+</html>
